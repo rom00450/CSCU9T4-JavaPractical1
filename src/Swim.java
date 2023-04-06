@@ -1,6 +1,8 @@
 public class Swim extends Entry{
     private String where;
 
+    private int test;
+
     public Swim(String n, int d, int m, int y, int h, int min, int s, float dist, String where){
         super(n,d,m,y,h,min,s,dist);
         this.where = where;
