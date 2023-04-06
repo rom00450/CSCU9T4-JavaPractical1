@@ -19,8 +19,8 @@ public class Cycle extends Entry{
     public String getEntry(){
         String result = getName()+" cycled " + getDistance() + " km in "
                 +getHour()+":"+getMin()+":"+ getSec() + " on "
-                +getDay()+"/"+getMonth()+"/"+getYear()+ " with terrain: " + getTerrain()
-                + " and tempo: "+ getTempo() + "\n";
+                +getDay()+"/"+getMonth()+"/"+getYear()+ " on " + getTerrain()
+                + " at "+ getTempo() + " tempo" + "\n";
         return result;
     }
 

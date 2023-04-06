@@ -191,8 +191,9 @@ public class TrainingRecordGUI extends JFrame implements ActionListener {
         int m = Integer.parseInt(month.getText());
         int d = Integer.parseInt(day.getText());
         int y = Integer.parseInt(year.getText());
+        String n = name.getText();
         outputArea.setText("looking for record to delete...");
-        String message = myAthletes.removeEntry(d,m,y);
+        String message = myAthletes.removeEntry(n,d,m,y);
         return message;
     }
 

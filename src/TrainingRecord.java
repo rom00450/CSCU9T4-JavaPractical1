@@ -39,8 +39,9 @@ public class TrainingRecord {
         ArrayList<String> results = new ArrayList();
         while (iter.hasNext()) {
             Entry current = iter.next();
-            if (current.getDay()==d && current.getMonth()==m && current.getYear()==y)
+            if (current.getDay()==d && current.getMonth()==m && current.getYear()==y) {
                 results.add(current.getEntry());
+            }
         }
         return results.toString();
     } // lookupEntry
@@ -54,12 +55,12 @@ public class TrainingRecord {
        tr.clear();
    }
 
-   public String removeEntry(int d, int m, int y){
+   public String removeEntry(String n, int d, int m, int y){
        ListIterator<Entry> iter = tr.listIterator();
        String result = "Entry removed";
        while(iter.hasNext()){
            Entry current = iter.next();
-           if (current.getDay()==d && current.getMonth()==m && current.getYear()==y){
+           if (current.getName().equalsIgnoreCase(n) && current.getDay()==d && current.getMonth()==m && current.getYear()==y){
                tr.remove(current);
            }
        }
