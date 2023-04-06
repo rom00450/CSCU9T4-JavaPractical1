@@ -54,19 +54,19 @@ public class TrainingRecordTest {
      * Test of addEntry with a repeat
      * Adding another entry for the same person on the same day should fail
      */
-//    @Test
-//    public void testAddEntryUnique() {
-//        System.out.println("addEntry -- fail");
-//        Entry a = new Entry("Alice", 1, 2, 2003, 0, 16, 7, 3);
-//        Entry b = new Entry("Alice", 1, 2, 2003, 0, 16, 7, 3);
-//        TrainingRecord instance = new TrainingRecord();
-//        instance.addEntry(a);
-//        instance.addEntry(b);
-//        assertEquals(instance.getNumberOfEntries(),1);
-//        // You might also consider using assertThrows() and let
-//        // TrainingRecord instance take care of when you're trying to add
-//        // a none-unique entry
-//    }
+    @Test
+    public void testAddEntryUnique() {
+        System.out.println("addEntry -- fail");
+        Entry a = new Entry("Alice", 1, 2, 2003, 0, 16, 7, 3);
+        Entry b = new Entry("Alice", 1, 2, 2003, 0, 16, 7, 3);
+        TrainingRecord instance = new TrainingRecord();
+        instance.addEntry(a);
+        instance.addEntry(b);
+        assertEquals(instance.getNumberOfEntries(),1);
+        // You might also consider using assertThrows() and let
+        // TrainingRecord instance take care of when you're trying to add
+        // a none-unique entry
+    }
 
     /**
      * Test of lookupEntry method, of class TrainingRecord.

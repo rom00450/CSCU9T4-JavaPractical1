@@ -13,12 +13,11 @@ public class TrainingRecord {
     
     // add a record to the list
    public void addEntry(Entry e){
-        if (!tr.contains(e)) {
-            tr.add(e);
-        }
-        else{
-            System.out.println("Could not add entry");
-        }
+       if (tr.contains(e)) {
+           System.out.println("Could not add entry");
+       } else {
+           tr.add(e);
+       }
    } // addClass
    
    // look up the entry of a given day and month
