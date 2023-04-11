@@ -101,12 +101,12 @@ public class TrainingRecordGUI extends JFrame implements ActionListener {
         lookUpByDate.addActionListener(this);
         add(findAllByDate);
         findAllByDate.addActionListener(this);
-        add(addSwim);
-        addSwim.addActionListener(this);
-        add(addCycle);
-        addCycle.addActionListener(this);
-        add(addRun);
-        addRun.addActionListener(this);
+//        add(addSwim);
+//        addSwim.addActionListener(this);
+//        add(addCycle);
+//        addCycle.addActionListener(this);
+//        add(addRun);
+//        addRun.addActionListener(this);
         add(remove);
         remove.addActionListener(this);
         add(outputArea);
@@ -132,15 +132,15 @@ public class TrainingRecordGUI extends JFrame implements ActionListener {
         if(event.getSource() == findAllByDate){
             message = dateEntry();
         }
-        if (event.getSource() == addSwim){
-            message = addEntry("generic");
-        }
-        if (event.getSource() == addRun){
-            message = addEntry("generic");
-        }
-        if (event.getSource() == addCycle){
-            message = addEntry("generic");
-        }
+//        if (event.getSource() == addSwim){
+//            message = addEntry("generic");
+//        }
+//        if (event.getSource() == addRun){
+//            message = addEntry("generic");
+//        }
+//        if (event.getSource() == addCycle){
+//            message = addEntry("generic");
+//        }
         if(event.getSource() == remove){
             deleteEntry();
 
